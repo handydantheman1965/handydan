@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HandyDan V2 Home Page</title>
+
+    <style>
+
+/*----------------------------------------------------------------------
+                         Banner
+----------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------
+                         CSS for Slider
+----------------------------------------------------------------------*/
+
+
+
+        .main-page {
+            margin-top: 00px;
+            padding-top: 200px;
+            padding-left: 0px;
+            height: 500px;          /* Controls the buttons and images to top of page */
+            width: 1905px;          /*  width of the display box          */
+            display: flex;          /* Images Horizon not vertical for button vs images */
+            justify-content: center;
+            align-items: center;
+            border-top: 5px solid black;
+
+        }
+
+        .slider {
+            width: 1800px;           /*  Controls the width of the box */
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 700%;            /* Distance between pics */
+            height: 150px;
+            display: flex;          /* Images Horzional not vertical */
+
+            }
+
+        .slides input {
+            display: none;          /* hides the button on the left   */
+            }
+
+        .slide {
+            width: 20%;              /* Distance between pics */
+            transition: 2s;
+        }
+
+        .slide img {
+            width: 3950px;           /*      Width of images                              */
+            height: 1200px;          /*      Height of images                             */
+        }
+
+
+
+
+/*----------------------------------------------------------------------
+                  css for manual slide navigation
+----------------------------------------------------------------------*/
+
+        .navigation-manual {            /*     Controls the positions of buttons           */
+            position: absolute;
+            width: 1700px;              /*      Controls the L/R position of buttons        */
+            margin-top: 360px;          /*      Controls the T/B position of buttons        */
+            display: flex;              /*      Makes the buttons Round                     */
+            justify-content: center;    /*      Makes the buttons Round  */
+        }
+
+        .manual-btn {
+            border: 2px solid;
+            padding: 5px;              /*      Controls the size of the buttons*/
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;             /*      Time to fill background color of button */
+        }
+
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;           /*   Controls the distance of buttons */
+        }
+
+        .manual-btn:hover {
+            background-color: rgb(9, 16, 159);  /* Background color of button */
+        }
+
+        #radio1:checked ~ .first{margin-left: 0;}
+        #radio2:checked ~ .first{margin-left: -2515px;}
+        #radio3:checked ~ .first{margin-left: -5030px;}
+        #radio4:checked ~ .first{margin-left: -7570px;}
+
+
+
+/*----------------------------------------------------------------------
+               CSS for Automatic slide navigation
+----------------------------------------------------------------------*/
+
+        .navigation-auto {
+            position: absolute;
+            display: flex;
+            width: 00px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .navigation-auto div {
+            border: 0px solid rgb(0, 255, 38);
+            padding: 00px;
+            border-radius: 0px;
+            transition: 1s;
+        }
+
+/*----------------------------------------------------------------------
+               CSS for banner
+----------------------------------------------------------------------*/
+
+        .logo {
+            position: relative;
+            left :30px;
+            border-bottom: 5px solid Red;
+
+            }
+
+        .bannerBox {
+            position:fixed;
+            top: 0px;
+            left: 0px;
+            background: white;
+            display: grid;
+            grid-template-columns: 800px 750px 350px;
+            border-bottom: 5px solid black;
+            z-index 100;
+            }
+        .bannerBox2 {
+            display: grid;
+            grid-template-rows: 50px 50px;
+            border-bottom: 5px solid Red;
+            }
+
+       .bannerBox3 {
+            display: grid;
+            grid-template-columns: 170px 250px 250px;
+            margin-top: 60px;
+            font-size:20px;
+            font-weight: 900;
+
+            }
+
+       .bannerBox4 {
+
+            display: grid;
+            grid-template-columns: 350px;
+            grid-template-rows: 40px 40px 40px 40px;
+            font-size: 20px;
+            font-weight: 900;
+            border-bottom: 5px solid Red;
+            }
+
+
+
+        .phone{
+            height:20px;
+        }
+
+/*----------------------------------------------------------------------
+                            CSS for About Us
+----------------------------------------------------------------------*/
+
+        .aboutUs1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .textBox {
+            font-size: 30px;
+            }
+
+
+    </style>
+
+</head>
+<body>
+<!--                       Banner                      -->
+
+
+<div class="bannerBox">
+    <div><img class="logo"  src="../1-2-1 Pics/1 HandyDanLogo.png"></div>
+    <div class="bannerBox2">
+        <div>2</div>
+        <div class="bannerBox3">
+            <div>Services</div>
+            <div>Completed Projects</div>
+            <div>Contact Us</div>
+        </div>
+    </div>
+    <div class="bannerBox4">
+        <div></div>
+        <div><img class="phone"  src="../1-2-1 Pics/6.Phone.png"> Phone Number: 435-414-5523</div>
+        <div><img class="phone"  src="../1-2-1 Pics/7-text.png"> Text Number: 435-414-5523</div>
+        <div><img class="phone"  src="../1-2-1 Pics/8-Email.png"> Email: essnowed@gmail.com</div>
+    </div>
+
+</div>
+
+
+<!--                       Slide                      -->
+
+
+            <!--                  Image slider Start            -->
+<div>
+  <div class="main-page">
+    <div class="slider">
+        <div class="slides">
+            <!--                  Radio Button Start            -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+            <!--                   Radio Button End            -->
+            <!--                   Slide Image Start           -->
+                <div class = "slide first"><img src="../1-2-1 Pics/2 paintYourWalls.png" alt=""></div>
+                <div class = "slide"><img src="../1-2-1 Pics/3.patchwalls.png" alt=""></div>
+                <div class = "slide"><img src="../1-2-1 Pics/4.kitchenRemodel.png" alt=""></div>
+                <div class = "slide"><img src="../1-2-1 Pics/5.bathroomsToo.png" alt=""></div>
+
+
+            <!--                   Slide Image End             -->
+            <!--            Automatic Navigation Start         -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+            <!--             Automatic Navigation End          -->
+        </div>
+            <!--             Manual Navigation End
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+             -->
+
+        </div>
+            <!--            Manual Navigation Start            -->
+    </div>
+            <!--               Image slider End                -->
+
+
+  </div>
+</div>
+
+
+<!--                           About us                     -->
+
+<div class="aboutUs1">
+    <div>
+       <p class="textBox">For the last 14 years, I have been flipping and renting houses, now I am
+       using the knowledge I have aquired through hard work to assist others
+       in our community.</p>
+
+       <p class="textBox">I specialize on working within YOUR budget. Whether  a small project that
+       or a complete remodel, I am here to complete the job.</p>
+
+       <p class="textBox">We have heard that it is difficult to reach a handyman... Either through
+       Phone, Text, or Email; we are easy to reach and committed to keeping all appointments
+       on time.</p>
+
+
+
+    </div>
+
+        <div>
+       <p class="textBox">For the last 14 years, I have been flipping and renting houses, now I am
+       using the knowledge I have aquired through hard work to assist others
+       in our community.</p>
+
+       <p class="textBox">I specialize on working within YOUR budget. Whether  a small project that
+       or a complete remodel, I am here to complete the job.</p>
+
+       <p class="textBox">We have heard that it is difficult to reach a handyman... Either through
+       Phone, Text, or Email; we are easy to reach and committed to keeping all appointments
+       on time.</p>
+
+
+
+    </div>
+        </div>
+
+        <div>
+       <p class="textBox">For the last 14 years, I have been flipping and renting houses, now I am
+       using the knowledge I have aquired through hard work to assist others
+       in our community.</p>
+
+       <p class="textBox">I specialize on working within YOUR budget. Whether  a small project that
+       or a complete remodel, I am here to complete the job.</p>
+
+       <p class="textBox">We have heard that it is difficult to reach a handyman... Either through
+       Phone, Text, or Email; we are easy to reach and committed to keeping all appointments
+       on time.</p>
+
+
+
+    </div>
+    </div>
+
+        <div>
+       <p class="textBox">For the last 14 years, I have been flipping and renting houses, now I am
+       using the knowledge I have aquired through hard work to assist others
+       in our community.</p>
+
+       <p class="textBox">I specialize on working within YOUR budget. Whether  a small project that
+       or a complete remodel, I am here to complete the job.</p>
+
+       <p class="textBox">We have heard that it is difficult to reach a handyman... Either through
+       Phone, Text, or Email; we are easy to reach and committed to keeping all appointments
+       on time.</p>
+
+
+
+    </div>
+    <div></div>
+
+
+</div>
+</body>
+
+
+
+
+
+
+</body>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 4000);
+
+    </script>
+
+
+
+
+</body>  
+
+
+</html>
+
+
+
