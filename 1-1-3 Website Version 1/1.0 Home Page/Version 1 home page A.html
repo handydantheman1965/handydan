@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    <title>Version 1</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .navbar {
+       display: grid;
+       grid-template-columns: 70px 900px 1fr;
+      overflow: hidden;
+      background-color: black;
+
+
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      z-index: 3;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+       z-index: 3;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 3;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+    .large-image {
+      border-width: 5px;
+      Border-style: solid;
+      border-color: red;
+      width: 1890px;
+       position: absolute;
+      z-index: 1;
+      }
+
+    .logo {
+        width: 100px;
+    }
+
+    .container {
+      z-index: 1;
+        }
+
+    .text {
+        font-size: 50px;
+        color: red;
+         z-index: 4;
+        }
+</style>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div>
+            <img class="logo" src="../../../../../1-1-2 Web Page/Images/ThunderCat Logo.jpeg">
+        </div>
+        <div>
+            <a>SnowSoft</a>
+        </div>
+            <div>
+                    <div class="dropdown">
+                      <button class="dropbtn">More
+                      <i class="fa fa-caret-down">abcd</i>
+                      </button>
+                    <div class="dropdown-content">
+                      <a href="Dans Webpage.html">Home</a>
+                      <a href="Dan_sxs.html">Side by Side Page</a>
+                      <a href="Dan_Ebike.html">Ebike Page</a>
+                      <a href="Dan_Exercise.html">Exercise page</a>
+                      <a href="Dan_Airsoft.html">Airsoft Page</a></a>
+                    </div>
+                  </div>
+
+
+
+
+              <a href="Dan_Ebike.html">Ebike Page</a>
+              <a href="Dan_Exercise.html">Exercise page</a>
+              <a href="Dan_Airsoft.html">Airsoft Page</a>
+                  <div class="dropdown">
+                      <button class="dropbtn">More
+                      <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content">
+                      <a href="Dans Webpage.html">Home</a>
+                      <a href="Dan_sxs.html">Side by Side Page</a>
+                      <a href="Dan_Ebike.html">Ebike Page</a>
+                      <a href="Dan_Exercise.html">Exercise page</a>
+                      <a href="Dan_Airsoft.html">Airsoft Page</a></a>
+                    </div>
+                  </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <video class="large-image"  autoplay playsinline muted loop>
+              <source src="../../../../../1-1-2 Web Page/Videos/Digital Wave.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+          </video>
+
+
+        <a class="text">dan was sher</a>
+    </div>
+
+</body>
+</html>

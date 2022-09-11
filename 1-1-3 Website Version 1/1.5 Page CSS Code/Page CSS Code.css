@@ -1,0 +1,91 @@
+.navbar {
+   overflow: hidden;
+   background-color: white;
+   font-family: Arial, Helvetica, sans-serif;
+     display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0px 90px 20px;
+    border-bottom: 2px dotted rgba(212, 208, 208, 0.766);
+ }
+ 
+ .logo {
+   height: 130px;
+   margin-left: 600px;
+ }
+ 
+ .navbar a {
+   float: left;
+   font-size: 26px;
+   color: rgb(6, 4, 4);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+ 
+ .dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+ }
+ 
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: white;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ .grid-layout-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 690px ;
+    border-width: 5px;
+    Border-style: solid;
+    border-color:white;
+    z-index: 2;
+      }
+ 
+   .container {
+     border-width: 3px;
+     Border-style: solid;
+     border-color:rgb(1, 0, 0);
+      box-shadow: 20px 50px 20px rgb(215, 208, 208);
+     }
+ 
+ .p1 {color:rgb(162, 54, 54); font-size: 50px;font-family: "Fantasy", copperplate;}
+ .p2 {color:rgb(72, 64, 64); font-size: 20px}
+ .p3 {font-weight: 900;  color:rgba(58, 58, 61, 0.721); font-size: 30px}
+ 
